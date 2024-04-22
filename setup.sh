@@ -49,11 +49,6 @@ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh -s -- -y
 # Install some required softwares (I use them so yeah, feel free to modify the script)
 yay -S --noconfirm base-devel google-chrome spotify discord xwaylandvideobridge neofetch neovim-git nano visual-studio-code-bin htop bpytop freshfetch-git ttf-symbola noto-fonts-cjk noto-fonts-emoji ttf-twemoji fzf kcalc vlc okular tt 
 
-echo "All the packages basically required are installed !!"
-
-echo "Now installing Volta and node latest"
-# Install node latest using volta
-=======
 # Install some required softwares (I use them so yeah, feel free to modify the script)
 yay -S --noconfirm \
   zip unzip \
@@ -73,6 +68,8 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # Install Node using Volta
 curl https://get.volta.sh | bash
+source ~/.bashrc
+volta install node
 
 echo "Now installing SDKMAN and Java latest"
 # Install java latest using SDKMAN
